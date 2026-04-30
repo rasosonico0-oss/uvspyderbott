@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SPYDERBOT</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      padding: 20px;
+    }
+
+    /* Botón WhatsApp flotante */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 24px;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0); }
+    }
+
+    /* Contacto */
+    .contact-item {
+      display: flex;
+      gap: 10px;
+      margin: 15px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.6s forwards;
+    }
+
+    .contact-item:nth-child(1){ animation-delay: 0.2s; }
+    .contact-item:nth-child(2){ animation-delay: 0.4s; }
+    .contact-item:nth-child(3){ animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .ci-icon {
+      font-size: 24px;
+    }
+
+    .ci-label {
+      font-weight: bold;
+    }
+
+    /* Botón */
+    .btn-green {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+
+    .btn-green:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer-text {
+      margin-top: 40px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/56945661713?text=Hola,%20quiero%20información%20sobre%20SPYDERBOT"
+class="whatsapp-btn" target="_blank">
+💬
+</a>
+
+<!-- CONTACTO -->
+<div class="contact-items">
+
+  <div class="contact-item">
+    <div class="ci-icon">📧</div>
+    <div class="ci-text">
+      <div class="ci-label">Contacto</div>
+      <div class="ci-val">uvspyderbot</div>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="ci-icon">💬</div>
+    <div class="ci-text">
+      <div class="ci-label">WhatsApp</div>
+      <div class="ci-val">+56 9 4566 1713</div>
+    </div>
+  </div>
+
+  <div class="contact-item">
+    <div class="ci-icon">🌐</div>
+    <div class="ci-text">
+      <div class="ci-label">Ubicación</div>
+      <div class="ci-val">Chile · Operación Latinoamérica</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- CTA FINAL -->
+<a href="https://wa.me/56945661713?text=Hola,%20quiero%20saber%20más%20sobre%20SPYDERBOT"
+target="_blank" class="btn-green">
+💬 WhatsApp directo
+</a>
+
+<!-- FOOTER -->
+<div class="footer-text">
+© 2026 SPYDERBOT · Tecnología que cultiva el futuro
+</div>
+
+</body>
+</html>
